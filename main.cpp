@@ -1,14 +1,14 @@
 #include <iostream>
 #include <cmath>
-#ifdef MAC
+#ifdef __APPLE__
 #include <GLUT/glut.h>
 #else
 #include <GL/glut.h>
 #endif
 
 /// The window's width and height
-#define X_DIM 2000
-#define Y_DIM 2000
+#define X_DIM 1000
+#define Y_DIM 1000
 
 /// Numbers of points that should be calculated before redrawing. Redrawing is slow, so the higher this is, the
 /// faster points will end up on the screen, but things can look slow to generate if you turn this up too high.
